@@ -1,0 +1,120 @@
+/*cabeçalho*/
+header{
+    background-color: white;
+}
+
+.nav-link{
+    color: black;
+}
+
+/*Conteudo principal*/
+
+main{
+    min-height: 500px;
+   
+}
+
+/*banner*/
+
+#section-banners img{
+    height: 500px;
+}
+
+
+#section-vendidos{
+    text-align: center;
+    margin-top: 10px;
+    
+}
+
+/* .card-group{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+} */
+
+#section-vendidos img{
+    height: 300px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+#section-vendidos .card{
+    margin: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+#section-vendidos .price{
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* consoles */
+#section-consoles{
+    text-align: center;
+    margin-top: 10px;
+    
+}
+
+#section-consoles img{
+    height: 300px;
+    border-radius: 5px;
+}
+
+#section-consoles .card{
+    margin: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+#section-consoles .price{
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* games */
+
+#section-games{
+    text-align: center;
+    margin-top: 10px;
+    
+}
+
+#section-games img{
+    height: 300px;
+    border-radius: 5px;
+}
+
+#section-games .card{
+    margin: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+#section-games .price{
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+}
+/*Produtos vendidos*/
+/*Rodapé*/
+footer{
+    text-align: center;
+}
+
+footer p{
+    font-weight: bold;
+    padding: 10px;
+}
+
+/*Botão Voltar topo*/
+
+/* página de login  */
+
+
+/* Formulário de cadastro*/
+
