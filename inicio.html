@@ -6,26 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game mania</title>
     <link rel="stylesheet" href="/assets/css/inicio-style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 <body>
 
     <header>
-        <div class="container">
-            <nav>
-              
-                <ul>
-                    <li class="nav-logo" style="float:left"><a href="#">Logo</a></li>
-                    <li class="nav-item"><a href="#">Consoles</a></li>
-                    <li class="nav-item"><a href="#">Jogos</a></li>
-                    <li class="nav-item"><a href="#">Promoções</a></li>
-                    <li class="nav-item"><a href="#">Login</a></li>
-                    <li class="nav-item"><a href="#">Cadastro</a>
-                    </li>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="/assets/img/Logo3.png" alt="Logo game mania" width="90" height="68"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Consoles</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Jogos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Promoções</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Links
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Carrinho</a></li>
+                      <li><a class="dropdown-item" href="#">Login</a></li>
+                      <li><a class="dropdown-item" href="#">Cadastro</a></li>
+                    </ul>
+                  </li>
                 </ul>
-              
-            </nav>
-        </div>
+              </div>
+            </div>
+          </nav>
     </header>
     
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
