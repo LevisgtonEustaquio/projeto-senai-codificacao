@@ -1,11 +1,21 @@
-*{
+html, body {
     margin: 0;
-    padding: 0;;
-}
+    padding: 0;
+    height: 100%;
+    }
+    #wrapper{
+        position: relative;
+        min-height: 100vh;
+      }
+    #body-content{
+        padding-bottom: 2.5rem;    /* altura do rodapé */
+    }
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: black;
+    background-color: rgb(32, 29, 29);
+    margin: 0;
+    padding: 0;
 }
 /*Estilo da barra de navegação*/
 .navbar{
@@ -14,11 +24,6 @@ body{
     color: white;
 }
 
-.navbar{
-    height: 100px;
-    background-color: rgb(32, 29, 29);
-    color: white;
-}
 
  .nav-item  a{
     color: white;
@@ -36,21 +41,30 @@ a.nav-link:link{
 
 a.nav-link:hover{
     color: rgb(32, 29, 29);
-    background-color: lightgray;
+    background-color: lightgreen;
     border-radius: 50px;
  }
 
 .nav-item .dropdown .dropdown-menu a{
-    color: white;
+    color: rgb(32, 29, 29);
     background-color: black;
 }
 
 .nav-link .dropdown-toggle{
-    color: white;
+    color: rgb(32, 29, 29);
 }
 
 ul.dropdown-menu{
-    background-color: rgb(32, 29, 29);
+    background-color: lightgreen;
+    color: rgb(32, 29, 29);
+    width: 10px;
+}
+
+.dropdown-menu a:hover{
+    color: white;
+    background-color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 /* corpo do banner e descrição */
 
@@ -60,8 +74,7 @@ main{
 #containerBanner{
     display: flex;
     background-color: lightgreen;
-    margin-top: 20px;
-    padding: 20px;
+    padding: 40px 20px;
 }
 
 div#carouselExampleCaptions img{
@@ -70,6 +83,7 @@ div#carouselExampleCaptions img{
 
 .carousel-inner{
     border-radius: 20px;
+    box-shadow: 2px 6px 8px 0 rgb(32, 29, 29);
 }
 
 div.description{
@@ -80,24 +94,74 @@ div.description{
     color: rgb(32, 29, 29);
 }
 
+.container-destaques{
+    color: rgb(32, 29, 29);
+    background-color: white;
+}
 
+.produto-item{
+    border: 1px solid rgb(32, 29, 29);
+}
 
-
-
-
-footer{
-    display: flex;
-    text-align: center;
-    background-color: rgb(32, 29, 29);
+.produto-img{
+    position: relative;
+    overflow: hidden;
     width: 100%;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
 }
 
-footer p{
-    color: white;
-    font-size: 12px;
-    text-transform: uppercase;
-    align-items: center;
+.btns{
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    font-size: 15px;
+    font-weight: 300;
 }
+
+.btns button{
+    border: none;
+    background-color: black;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.btns button:hover{
+    color: lightgreen;
+}
+
+.produto-img:hover .btns{
+    bottom: 0;
+}
+
+.heart-icon{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 18px;
+}
+
+.produto-tipo{
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+.produto-nome{
+    transition: all 0.3s ease-in-out;
+}
+
+.produto-nome:hover{
+    color: lightgreen!important;
+}
+
+.produto-preco{
+    color: lightgreen;
+}
+
+#footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;            /* altura do rodapé */
+    background-color: rgb(32, 29, 29);
+    color: white;
+    text-align: center;
+  }
