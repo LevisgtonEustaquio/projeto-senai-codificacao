@@ -33,11 +33,7 @@ body{
     background-color: transparent;
 }
 
-a.nav-link:link{
-    color: white;
-    background-color: rgb(32, 29, 29);
-    border-radius: 50px;
- }
+
 
 a.nav-link:hover{
     color: rgb(32, 29, 29);
@@ -78,7 +74,7 @@ main{
 }
 
 div#carouselExampleCaptions img{
-    height: 300px;
+    height: 500px;
 }
 
 .carousel-inner{
@@ -94,18 +90,37 @@ div.description{
     color: rgb(32, 29, 29);
 }
 
-.container-destaques{
-    color: rgb(32, 29, 29);
-    background-color: white;
+#produtosDestaques{
+    margin-top: 50px;
 }
 
-.produto-item{
-    border: 1px solid rgb(32, 29, 29);
+#produtosDestaques h1{
+    color: lightgreen;
+    text-shadow: 0.1em 0.1em 0.2em lightgray;
+    
 }
 
-.produto-img{
+.destaquesItem img{
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.produtoItem{
+    border: 1px solid lightgrey;
+    border-radius: 20px;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 10px;
+}
+
+.destaquesItem{
     position: relative;
     overflow: hidden;
+    margin-top: 10px;
+}
+
+.destaquesItem img{
+    border-radius: 20px;
 }
 
 .btns{
@@ -114,46 +129,36 @@ div.description{
     bottom: -100%;
     font-size: 15px;
     font-weight: 300;
+    transition: all 0.3s ease-in-out;
+    
 }
-
 .btns button{
     border: none;
-    background-color: black;
-    color: white;
+    background-color: rgb(39, 39, 39);
+    color: #fff;
     transition: all 0.3s ease-in-out;
 }
-
 .btns button:hover{
     color: lightgreen;
 }
-
-.produto-img:hover .btns{
+.destaquesItem:hover .btns{
     bottom: 0;
 }
 
-.heart-icon{
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 18px;
-}
-
-.produto-tipo{
+.produtoTipo{
     font-size: 13px;
     opacity: 0.8;
 }
-
-.produto-nome{
+.produtoNome{
     transition: all 0.3s ease-in-out;
 }
-
-.produto-nome:hover{
+.produtoNome:hover{
     color: lightgreen!important;
 }
-
-.produto-preco{
+.produtoPreco{
     color: lightgreen;
 }
+
 
 #footer {
     position: relative;
