@@ -100,13 +100,22 @@ div.description{
     
 }
 
+.containerDestaques{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
 .destaquesItem img{
-    max-width: 400px;
-    max-height: 400px;
+    height: 200px;
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid lightgrey;
 }
 
 .produtoItem{
-    border: 1px solid lightgrey;
     border-radius: 20px;
     justify-content: space-around;
     padding: 10px;
@@ -119,15 +128,12 @@ div.description{
     margin-top: 10px;
 }
 
-.destaquesItem img{
-    border-radius: 20px;
-}
 
 .btns{
     position: absolute;
     left: 0;
     bottom: -100%;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 300;
     transition: all 0.3s ease-in-out;
     
@@ -138,6 +144,15 @@ div.description{
     color: #fff;
     transition: all 0.3s ease-in-out;
 }
+
+.btnCarrinho{
+    border-bottom-left-radius: 17px;
+}
+
+.btnView{
+    border-bottom-right-radius: 17px;
+}
+
 .btns button:hover{
     color: lightgreen;
 }
