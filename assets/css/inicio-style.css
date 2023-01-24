@@ -204,6 +204,18 @@ a.produtoNome{
 .footer-brand{
     display: flex;
     justify-content: flex-start;
+    width: 25%;
+    margin-left: 25px;
+}
+
+.contatos{
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.contatos a{
+    text-decoration: none;
+    color: white;
 }
 
 .containerFooter ul{
