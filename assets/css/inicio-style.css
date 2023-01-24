@@ -3,12 +3,14 @@ html, body {
     padding: 0;
     height: 100%;
     }
+
     #wrapper{
         position: relative;
         min-height: 100vh;
       }
     #body-content{
         padding-bottom: 2.5rem;    /* altura do rodapé */
+        background-color: rgb(32, 29, 29);
     }
 
 body{
@@ -26,7 +28,7 @@ body{
 
 
  .nav-item  a{
-    color: lightgreen;
+    color: white;
  }
 
 .navbar-brand:hover{
@@ -34,16 +36,16 @@ body{
 }
 
 
-
 a.nav-link:hover{
-    color: rgb(32, 29, 29);
-    background-color: lightgreen;
+    color: white;
+    background-color: rgb(3, 124, 3);
     border-radius: 50px;
  }
 
+
 .nav-item .dropdown .dropdown-menu a{
     color: rgb(32, 29, 29);
-    background-color: black;
+    background-color: rgb(32, 29, 29);
 }
 
 .nav-link .dropdown-toggle{
@@ -51,25 +53,25 @@ a.nav-link:hover{
 }
 
 ul.dropdown-menu{
-    background-color: lightgreen;
-    color: rgb(32, 29, 29);
-    width: 10px;
+    background-color: rgb(32, 29, 29);
+    color: rgb(3, 124, 3);
+    width: 100%;
 }
 
 .dropdown-menu a:hover{
     color: white;
-    background-color: black;
+    background-color: rgb(3, 124, 3);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 /* corpo do banner e descrição */
 
 main{
-    background-color: black;
+    background-color: rgb(32, 29, 29);
 }
 #containerBanner{
     display: flex;
-    background-color: lightgreen;
+    background-color: rgb(3, 124, 3);
     padding: 40px 20px;
 }
 
@@ -87,7 +89,7 @@ div.description{
     height: 100%;
     font-size: 18px;
     text-align: justify;
-    color: rgb(32, 29, 29);
+    color: white;
 }
 
 #produtosDestaques{
@@ -95,8 +97,7 @@ div.description{
 }
 
 #produtosDestaques h1{
-    color: lightgreen;
-    text-shadow: 0.1em 0.1em 0.2em lightgray;
+    color: white;
     
 }
 
@@ -140,9 +141,10 @@ div.description{
 }
 .btns button{
     border: none;
-    background-color: rgb(39, 39, 39);
+    background-color: rgb(32, 29, 29);
     color: #fff;
     transition: all 0.3s ease-in-out;
+    
 }
 
 .btnCarrinho{
@@ -154,7 +156,7 @@ div.description{
 }
 
 .btns button:hover{
-    color: lightgreen;
+    color: rgb(3, 124, 3);
 }
 .destaquesItem:hover .btns{
     bottom: 0;
@@ -165,14 +167,23 @@ div.description{
     opacity: 0.8;
     color: lightgray;
 }
+
 .produtoNome{
     transition: all 0.3s ease-in-out;
+    opacity: 0.3;
 }
+
+a.produtoNome{
+    color: lightgray;
+}
+
 .produtoNome:hover{
-    color: lightgreen!important;
+    color: rgb(3, 124, 3)!important;
+    opacity: 1;
 }
+
 .produtoPreco{
-    color: lightgreen;
+    color: rgb(3, 124, 3);
 }
 
 
