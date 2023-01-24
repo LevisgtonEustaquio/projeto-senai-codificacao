@@ -64,6 +64,7 @@ ul.dropdown-menu{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
+
 /* corpo do banner e descrição */
 
 main{
@@ -187,17 +188,32 @@ a.produtoNome{
 }
 
 
-#footer {
+.footer {
     display: flex;
     position: relative;
     bottom: 0;
     width: 100%;
-    height: 2.5rem;            /* altura do rodapé */
+    height: 150px;            /* altura do rodapé */
     background-color: rgb(32, 29, 29);
     color: white;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.footer-brand{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.containerFooter ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footerList li a{
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
 }
 
