@@ -24,10 +24,11 @@ body{
     height: 100px;
     background-color: rgb(32, 29, 29);
     color: white;
+    border-bottom: 1px solid white;
 }
 
 
- .nav-item  a{
+ .nav-item  a:link{
     color: white;
  }
 
@@ -46,10 +47,6 @@ a.nav-link:hover{
 .nav-item .dropdown .dropdown-menu a{
     color: rgb(32, 29, 29);
     background-color: rgb(32, 29, 29);
-}
-
-.nav-link .dropdown-toggle{
-    color: rgb(32, 29, 29);
 }
 
 ul.dropdown-menu{
@@ -72,7 +69,14 @@ main{
 }
 #containerBanner{
     display: flex;
-    background-color: rgb(3, 124, 3);
+    background: radial-gradient(
+        circle at 0% 100%,
+        #11630673 4%,
+        #087904e5 30%,
+        #11ad0ce5 62%,
+        #2fe629e5 85%,
+        #32cf02
+    );
     padding: 40px 20px;
 }
 
@@ -93,6 +97,7 @@ div.description{
     color: white;
 }
 
+/*estilo de produtos em destaques*/
 #produtosDestaques{
     margin-top: 50px;
 }
@@ -187,7 +192,14 @@ a.produtoNome{
     color: rgb(3, 124, 3);
 }
 
+#section-login{
+    color: white;
+}
 
+#section-cadastro{
+    color: white;
+}
+/*Estilo do rodapé*/
 .footer {
     display: flex;
     position: relative;
@@ -199,6 +211,7 @@ a.produtoNome{
     padding: 10px;
     justify-content: space-around;
     align-items: flex-start;
+    border-top: 1px solid rgb(3, 124, 3);
 }
 
 .footer-brand{
