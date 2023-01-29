@@ -1,8 +1,7 @@
-html, body {
+*{
     margin: 0;
     padding: 0;
-    height: 100%;
-    }
+}
 
     #wrapper{
         position: relative;
@@ -16,11 +15,12 @@ html, body {
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(32, 29, 29);
-    margin: 0;
-    padding: 0;
+   
 }
+
 /*Estilo da barra de navegação*/
 .navbar{
+    width: ;
     height: 100px;
     background-color: rgb(32, 29, 29);
     color: white;
@@ -58,15 +58,14 @@ a.nav-link:hover{
 }
 
 
-ul.dropdown-menu{
+ul .dropdown-menu{
     background-color: rgb(32, 29, 29);
-    width: 100% !important;
+    width: 100%;
 }
 
-
 .dropdown-menu a{
-      color: white;
-    }
+    color: white;
+  }
 
 .dropdown-menu a:hover{
     color: white;
@@ -115,6 +114,10 @@ div.description{
     font-size: 18px;
     text-align: justify;
     color: white;
+}
+
+div.description h1{
+    margin-bottom: 30px;
 }
 
 /*estilo de produtos em destaques*/
